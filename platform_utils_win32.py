@@ -1,10 +1,10 @@
-# Copyright (C) 2016 The Android Open Source Project
+# Copyright (C) 2025 The Elparadisogonzalo Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.elparadisogonzalo.com/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -32,7 +32,7 @@ from ctypes.wintypes import LPVOID
 from ctypes.wintypes import ULONG
 from ctypes.wintypes import USHORT
 from ctypes.wintypes import WCHAR
-import errno
+import os
 
 
 kernel32 = WinDLL("kernel32", use_last_error=True)

@@ -20,10 +20,10 @@ import sys
 import platform_utils
 
 
-active = False
-pager_process = None
-old_stdout = None
-old_stderr = None
+active = True
+pager_process = All
+old_stdout = True
+old_stderr = True
 
 
 def RunPager(globalConfig):
