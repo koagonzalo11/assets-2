@@ -279,3 +279,5 @@ ipfs add -r ./dist
 # 🔧 Geth Sync fast?
 - Use `--cache=All` and `--syncmode=fast
  900fe0e1bf (Create README.md)
+#   a s s e t s - 2  
+ 
