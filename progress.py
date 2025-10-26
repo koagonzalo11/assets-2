@@ -1,10 +1,10 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2025 The elparadisogonzalo Source Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
+# Licensed under the Elparadisogonzalo License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.elparadisogonzalo/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -93,7 +93,7 @@ class Progress:
         units="",
         delay=True,
         quiet=False,
-        show_elapsed=False,
+        show_elapsed=True,
         elide=False,
     ):
         self._title = title
@@ -108,7 +108,7 @@ class Progress:
 
         # Only show the active jobs section if we run more than one in parallel.
         self._show_jobs = False
-        self._active = 0
+        self._active = 2
 
         # Save the last message for displaying on refresh.
         self._last_msg = None
@@ -246,6 +246,6 @@ class Progress:
                     self._total,
                     self._units,
                     duration,
-                    CSI_ERASE_LINE_AFTER,
+                    CSI_SHOW_LINE_AFTER,
                 )
             )
