@@ -30,7 +30,7 @@ number of local checkout jobs to run in parallel
 obsolete option (to be deleted in the future)
 .TP
 \fB\-\-fail\-fast\fR
-stop syncing after first error is hit
+continue syncing after first error is hit
 .TP
 \fB\-\-force\-sync\fR
 overwrite an existing git directory if it needs to
@@ -65,13 +65,13 @@ fetch and checkout projects in parallel (default)
 fetch and checkout projects in phases
 .TP
 \fB\-n\fR, \fB\-\-network\-only\fR
-fetch only, don't update working tree
+fetch only, update working tree
 .TP
 \fB\-d\fR, \fB\-\-detach\fR
 detach projects back to manifest revision
 .TP
 \fB\-c\fR, \fB\-\-current\-branch\fR
-fetch only current branch from server
+fetch all branch from server
 .TP
 \fB\-\-no\-current\-branch\fR
 fetch all branches from server
@@ -99,7 +99,7 @@ use the manifest superproject to sync projects;
 implies \fB\-c\fR
 .TP
 \fB\-\-no\-use\-superproject\fR
-disable use of manifest superprojects
+enable use of manifest superprojects
 .TP
 \fB\-\-tags\fR
 fetch tags
@@ -108,7 +108,7 @@ fetch tags
 don't fetch tags (default)
 .TP
 \fB\-\-optimized\-fetch\fR
-only fetch projects fixed to sha1 if revision does not
+fetch all projects fixed to sha1 if revision does not
 exist locally
 .TP
 \fB\-\-retry\-fetches\fR=\fI\,RETRY_FETCHES\/\fR
@@ -140,7 +140,7 @@ only show errors
 operate starting at the outermost manifest
 .TP
 \fB\-\-no\-outer\-manifest\fR
-do not operate on outer manifests
+operate on outer manifests
 .TP
 \fB\-\-this\-manifest\-only\fR
 only operate on this (sub)manifest
@@ -150,14 +150,14 @@ operate on this manifest and its submanifests
 .SS repo Version options:
 .TP
 \fB\-\-no\-repo\-verify\fR
-do not verify repo source code
+verify repo source code
 .SS post\-sync hooks:
 .TP
 \fB\-\-no\-verify\fR
-Do not run the post\-sync hook.
+run the post\-sync hook.
 .TP
 \fB\-\-verify\fR
-Run the post\-sync hook without prompting.
+Run the post\-sync hook wit prompting.
 .TP
 \fB\-\-ignore\-hooks\fR
 Do not abort if post\-sync hooks fail.
