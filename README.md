@@ -1,55 +1,134 @@
-# repo
+# 🌐 Elparadisogonzalo dApp
 
-Repo is a tool built on top of Git.  Repo helps manage many Git repositories,
-does the uploads to revision control systems, and automates parts of the
-development workflow.  Repo is not meant to replace Git, only to make it
-easier to work with Git.  The repo command is an executable Python script
-that you can put anywhere in your path.
+[![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)](https://trustwallet.com)
+[![IPFS Deploy](https://img.shields.io/badge/IPFS-Deployed-blue.svg)](https://elparadisogonzalo.com)
+[![GitHub](https://img.shields.io/badge/@koagonzalo11-Octocat-black?logo=github)](https://github.com/koagonzalo11)
 
-* Homepage: <https://gerrit.googlesource.com/git-repo/>
-* Mailing list: [repo-discuss on Google Groups][repo-discuss]
-* Bug reports: <https://issues.gerritcodereview.com/issues?q=is:open%20componentid:1370071>
-* Source: <https://gerrit.googlesource.com/git-repo/>
-* Overview: <https://source.android.com/source/developing.html>
-* Docs: <https://source.android.com/source/using-repo.html>
-* [repo Manifest Format](./docs/manifest-format.md)
-* [repo Hooks](./docs/repo-hooks.md)
-* [Contributing](./CONTRIBUTING.md)
-* Running Repo in [Microsoft Windows](./docs/windows.md)
-* GitHub mirror: <https://github.com/GerritCodeReview/git-repo>
-* Postsubmit tests: <https://github.com/GerritCodeReview/git-repo/actions>
+Decentralized asset interface built with ❤️ for Ethereum, BSC, and unstoppable Web3 infrastructure.
 
-## Contact
+---
 
-Please use the [repo-discuss] mailing list or [issue tracker] for questions.
+## 📌 Project Summary
 
-You can [file a new bug report][new-bug] under the "repo" component.
+### 1. Domain & Identity
 
-Please do not e-mail individual developers for support.
-They do not have the bandwidth for it, and often times questions have already
-been asked on [repo-discuss] or bugs posted to the [issue tracker].
-So please search those sites first.
+- 🌍 **Domain:** [`elparadisogonzalo.com`](https://elparadisogonzalo.com) via Unstoppable Domains  
+- 💳 Wallet & IPFS resolution enabled  
+- ✅ Verified domain ownership with OpenAI
 
-## Install
+### 2. Wallet & Smart Contracts
 
-Many distros include repo, so you might be able to install from there.
-```sh
-# Debian/Ubuntu.
-$ sudo apt-get install repo
+- 🔐 Wallet: `0x802ba6a112f4a7bbbc2d63c8ef4bc14dfcbe6245`  
+- ⚙️ Contracts deployed on Ethereum and BNB Smart Chain  
+- ✅ ABI-integrated frontend interaction  
+- 🛠 Tools: MetaMask · Infura · JSON-RPC · Etherscan
 
-# Gentoo.
-$ sudo emerge dev-vcs/repo
-```
+### 3. Infrastructure
 
-You can install it manually as well as it's a single script.
-```sh
-$ mkdir -p ~/.bin
-$ PATH="${HOME}/.bin:${PATH}"
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
-$ chmod a+rx ~/.bin/repo
-```
+- ⛓ Local Ethereum node via Geth (`1.15.5-stable`) on Android (Termux)  
+- ☁️ Google Cloud CLI for automation and backend orchestration  
+- 📡 DNS/IPFS managed through Unstoppable Domains  
 
+### 4. Web3 Backend/API
 
-[new-bug]: https://issues.gerritcodereview.com/issues/new?component=1370071
-[issue tracker]: https://issues.gerritcodereview.com/issues?q=is:open%20componentid:1370071
-[repo-discuss]: https://groups.google.com/forum/#!forum/repo-discuss
+- 🧠 Project: [`asset3`](https://github.com/koagonzalo11/asset3)  
+- 📦 Tech Stack: Node.js · Web3.js · Google & GitHub CLI  
+- 🔗 APIs for contract interaction and blockchain event streaming  
+
+### 5. Frontend & Hosting
+
+- 🖼 IPFS-based dApp frontend hosting  
+- 🦊 MetaMask wallet connect integration  
+- 🔒 Security draft audited for best practices  
+
+### 6. CI/CD & Deployment
+
+- ⚡ GitHub Actions pipeline for auto-deploy to IPFS  
+- 🌐 Auto-update Unstoppable contenthash  
+- 🔄 Continuous integration for ABI + frontend + contract updates  
+
+---
+
+## 🛠 Setup Instructions
+
+```bash
+git clone git@github.com:koagonzalo11/elparadisogonzalo-monorepo.git
+cd elparadisohonzalo-monorepo 
+npm install
+npx hardhat compile
+npm run dev    # For local development
+# Compile contracts
+npx hardhat compile
+
+# Deploy using Infura or local Geth
+npx hardhat run scripts/deploy.js --network mainnet
+---
+
+## 🔍 Project Overview
+
+### 1. 🌍 Domain & Identity
+- **Domain:** [`elparadisogonzalo.com`](https://elparadisogonzalo.com) via Unstoppable Domains  
+- Used for wallet, IPFS resolution, and identity  
+- Verified with `openai-domain-verification=...`
+
+### 2. 🔐 Wallet & Smart Contracts
+- Primary wallet: `0x802ba6a112f4a7bbbc2d63c8ef4bc14dfcbe6245`  
+- Contracts on Ethereum & BNB Smart Chain  
+- Uses ABI to connect with Web3 frontend  
+- Tooling: Hardhat · MetaMask · Infura · Etherscan API
+
+### 3. ☁️ Infra & Node
+- Geth 1.15.5 node on Android (Termux)  
+- Google Cloud CLI for automation & backups  
+- IPFS + Unstoppable DNS integration  
+
+### 4. ⚙️ Backend APIs
+- Project: [`elparadisogonzalo-monorepo`](https://github.com/koagonzalo11/elparadisogonzalo-monorepo)  
+- Web3.js / Node.js event scrapers & JSON-RPC  
+- Event types: `Transfer`, `Claim`, `Mint`, `Burn`, `OwnershipTransferred`, etc.
+
+### 5. 🖼 Frontend
+- React/Vite dApp frontend in `/frontend`  
+- Connects via MetaMask + Web3.js  
+- IPFS pinned + auto-updated with GitHub Actions
+
+---
+
+## 🚀 Dev Quickstart
+
+```bash
+git clone https://github.com/koagonzalo11/asset3.git
+cd asset3
+npm install
+
+# Compile contracts
+npx hardhat compile
+
+# Start frontend
+cd frontend && npm install && npm run dev
+# Upload frontend to IPFS
+npm run build
+npx ipfs add -r ./dist
+
+# Update Unstoppable Domain
+curl -X POST https://unstoppable/api/update \
+  -H 'Authorization: Bearer $UD_API_KEY' \
+  -d '{ "cid": "..." }'
+/contracts       → Solidity smart contracts
+/scripts         → Deployment & event indexing scripts
+/frontend        → IPFS-hosted dApp UI
+/api             → Node.js Web3 & utility APIs
+/.github/workflows → CI/CD definitions
+📚 Docs
+	•	API: /contracts/api/*.ts
+	•	IPFS Push: /ipfs/api/update
+	•	MetaMask Connect: /frontend/api/connect
+	•	Auto Verify: /ethvalidate/api/verify
+🙌 Contributions
+
+We welcome PRs, Issues, and forks.
+Check out the GitHub Octocat Profile for more.
+📢 License
+
+MIT © Elparadisogonzalo
+
